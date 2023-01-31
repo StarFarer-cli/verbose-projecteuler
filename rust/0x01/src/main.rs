@@ -1,8 +1,6 @@
 fn main() {
     let mut multiples: Vec<i32> = Vec::new();
-
-    let mut total_vector_sum : i32 = 0;
-
+    
     multiples = populate_multiples_vector(3,5,1000);
     println!("total sum {}", calculate_sum(multiples));
 }
