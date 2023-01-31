@@ -1,4 +1,4 @@
-PE : 0x01 [LINK1] [Link2]
+PE : 0x01 [Cago Link](https://github.com/StarFarer-cli/verbose-projecteuler/raw/main/rust/0x01/target/release/projecteuler_0x01)
 
 Multiples of 3 or 5
 
