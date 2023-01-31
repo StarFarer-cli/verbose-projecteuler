@@ -1,35 +1,32 @@
 fn main() {
-    //let mut multiplesThree : Vec<i32> = Vec::new();
-    //let mut multiplesFive : Vec<i32> = Vec::new();
-    //multiplesThree = populateMultiplesVector();
-    //multiplesFive = populateMultiplesVector();
-    populateMultiplesVector(5,10);
+    let mut multiples: Vec<i32> = Vec::new();
+
+    let mut total_vector_sum : i32 = 0;
+
+    multiples = populate_multiples_vector(3,5,1000);
+    println!("total sum {}", calculate_sum(multiples));
 }
 
-fn populateMultiplesVector(multiplesOfInt: i32, belowInt : i32) {
+fn populate_multiples_vector (multiples_of_int_a: i32, multiples_of_int_b: i32, below_int : i32) -> Vec<i32> {
+
+    println!("debug multiple of {} or {}, under {}", multiples_of_int_a, multiples_of_int_b, below_int);  
     let mut multiples : Vec<i32> = Vec::new();
-    //let multiple = 0;
-    for i in (1..belowInt){
 
-        //let does_not_exist = &v[100];
-        //let does_not_exist = v.get(100);
-
-        //for i in &v {
-        //    println!("{i}");
-        //}
-
-        multiples.push(multiplesOfInt * i);
-        //let multiple = multiples[i];
-        println!("debug {}", i);
-
-        //let pangram: &'static str = "the quick brown fox jumps over the lazy dog";
-        //println!("Pangram: {}", pangram);
-    
+    for i in 1..below_int {
+        if i % multiples_of_int_a == 0 || i % multiples_of_int_b == 0
+        {
+            multiples.push(i);
+        }
     }
-
-    
+    return multiples;
 }
 
-//fn calculateSum(vectorA : , vectorB: ) {
-//    println!("Another function.");
-//}
+fn calculate_sum(vector_in : Vec<i32>) -> i32 {
+    let mut vector_sum = 0;
+    for i in &vector_in {
+        // iterate immutably
+        let i: &i32 = i; // elements are immutable pointers
+        vector_sum = vector_sum + i;
+    }
+    return vector_sum;
+}

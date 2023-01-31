@@ -6,24 +6,9 @@ Example : If we list all the natural numbers below 10 that are multiples of 3 or
 
 Qustion: Find the sum of all the multiples of 3 or 5 below 1000.
 
+
+
+
 Pseudo-code
 
 Main goal : To calculate the sum of all 3 or 5 below 1000
-
-function populateMultiplesVector(multiplesOfInt BelowInt){
-
-Return intVector
-End
-}
-
-function calculateSum(Argument vectorA Argument vectorB){
-
-Return sum
-End
-}
-
-main
-{
-IntMultiplesThree
-IntMultiplesFive
-}
