@@ -1,4 +1,4 @@
-PE : 0x02 [Cago Link](snip)
+PE : 0x02 [Cago Link](https://github.com/StarFarer-cli/verbose-projecteuler/raw/main/rust/0x02/target/release/projecteuler_0x02)
 
 Even Fibonacci numbers
 
